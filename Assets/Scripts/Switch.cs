@@ -9,46 +9,41 @@ public class Switch : MonoBehaviour
     public GameObject switchOff2;
     public GameObject switchOn2;
     public GameObject switchOff3;
-    public GameObject switchOn3; 
+    public GameObject switchOn3;
     public GameObject switchOff4;
-    public GameObject switchOn4; 
+    public GameObject switchOn4;
     public GameObject switchOff5;
-    public GameObject switchOn5; 
+    public GameObject switchOn5;
     public GameObject switchOff6;
     public GameObject switchOn6;
 
     public bool switchIsOff1 = false;
-    public bool switchIsOn1 = true;  
-    public bool switchIsOff2 = false;
-    public bool switchIsOn2 = true;  
-    public bool switchIsOff3 = false;
-    public bool switchIsOn3 = true; 
+    public bool switchIsOn1 = true;
+    public bool switchIsOff2 = true;
+    public bool switchIsOn2 = false;
+    public bool switchIsOff3 = true;
+    public bool switchIsOn3 = false;
     public bool switchIsOff4 = false;
-    public bool switchIsOn4 = true;  
-    public bool switchIsOff5 = false;
-    public bool switchIsOn5 = true; 
+    public bool switchIsOn4 = true;
+    public bool switchIsOff5 = true;
+    public bool switchIsOn5 = false;
     public bool switchIsOff6 = false;
     public bool switchIsOn6 = true;
 
-    public bool switch1Clicked = false;
-    public bool switch2Clicked = false;
-    public bool switch3Clicked = false;
-    public bool switch4Clicked = false;
-    public bool switch5Clicked = false;
-    public bool switch6Clicked = false;
+    public int switchTally = 0;
 
     void Start()
     {
         switchOff1.SetActive(false);
         switchOn1.SetActive(true);
-        switchOff2.SetActive(false);
-        switchOn2.SetActive(true);
-        switchOff3.SetActive(false);
-        switchOn3.SetActive(true); 
+        switchOff2.SetActive(true);
+        switchOn2.SetActive(false);
+        switchOff3.SetActive(true);
+        switchOn3.SetActive(false);
         switchOff4.SetActive(false);
         switchOn4.SetActive(true);
-        switchOff5.SetActive(false);
-        switchOn5.SetActive(true); 
+        switchOff5.SetActive(true);
+        switchOn5.SetActive(false);
         switchOff6.SetActive(false);
         switchOn6.SetActive(true);
     }
@@ -88,13 +83,15 @@ public class Switch : MonoBehaviour
             switchOff2.SetActive(false);
             switchIsOn2 = true;
             switchIsOff2 = false;
+            switchTally++;
         }
 
+        Debug.Log("on" + switchIsOn2);
+        Debug.Log("off" + switchIsOff2);
     }
 
     public void Switch3Clicked()
     {
-
         if (switchIsOn3 == true)
         {
             switchOn3.SetActive(false);
@@ -109,8 +106,8 @@ public class Switch : MonoBehaviour
             switchOff3.SetActive(false);
             switchIsOn3 = true;
             switchIsOff3 = false;
+            switchTally++;
         }
-
     }
 
     public void Switch4Clicked()
@@ -130,7 +127,6 @@ public class Switch : MonoBehaviour
             switchIsOn4 = true;
             switchIsOff4 = false;
         }
-
     }
 
     public void Switch5Clicked()
@@ -149,8 +145,8 @@ public class Switch : MonoBehaviour
             switchOff5.SetActive(false);
             switchIsOn5 = true;
             switchIsOff5 = false;
+            switchTally++;
         }
-
     }
 
     public void Switch6Clicked()
@@ -170,31 +166,11 @@ public class Switch : MonoBehaviour
             switchIsOn6 = true;
             switchIsOff6 = false;
         }
-
     }
-
-    public void ChangeSwitch()
-    {
-        //if (switch1Clicked == true)
-      //  { 
-
-      //  }
-
-        
-  
-      
-     
-     
-    }
-}
-    /*
 
     void Update()
     {
-        if(switchOn1.ActiveSelf == true)
-        {
-
-        }
+        Debug.Log(switchTally);
     }
 }
-    */
+
