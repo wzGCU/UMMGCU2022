@@ -75,6 +75,7 @@ public class Switch : MonoBehaviour
             switchOff2.SetActive(true);
             switchIsOn2 = false;
             switchIsOff2 = true;
+            Debug.Log("on1" + switchIsOn2);
         }
 
         else if (switchIsOff2 == true)
@@ -84,6 +85,10 @@ public class Switch : MonoBehaviour
             switchIsOn2 = true;
             switchIsOff2 = false;
             switchTally++;
+<<<<<<< Updated upstream
+=======
+            Debug.Log("off1" + switchIsOff2);
+>>>>>>> Stashed changes
         }
 
         Debug.Log("on" + switchIsOn2);
@@ -170,7 +175,12 @@ public class Switch : MonoBehaviour
 
     void Update()
     {
+<<<<<<< Updated upstream
         Debug.Log(switchTally);
+=======
+        // Debug.Log(switchTally);
+        Debug.Log("on1" + switchIsOn2);
+>>>>>>> Stashed changes
     }
 }
 
