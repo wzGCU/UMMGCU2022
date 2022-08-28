@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Slot1
+  - Cog1
+  - Slot2
+  - Slot3
+  - Slot4
+  - Slot5
+  - Cog2
+  - Cog3
+  - Cog4
+  - Cog5
   layers:
   - Default
   - TransparentFX

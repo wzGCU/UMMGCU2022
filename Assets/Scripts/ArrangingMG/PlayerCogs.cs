@@ -14,7 +14,6 @@ public class PlayerCogs : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-
     public void OnBeginDrag(PointerEventData eventData)
     {
         canvasGroup.alpha = .6f;
@@ -39,9 +38,4 @@ public class PlayerCogs : MonoBehaviour, IPointerDownHandler, IBeginDragHandler,
     {
         Debug.Log("OnPointerDown");
     }
-
-  /*  public void OnDrop(PointerEventData, eventData)
-    {
-
-    }*/
 }
