@@ -12,5 +12,4 @@ public class EndCog : MonoBehaviour
             Debug.Log("yay, minigame completed!");
         }
     }
-
 }

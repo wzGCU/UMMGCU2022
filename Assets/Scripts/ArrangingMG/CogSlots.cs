@@ -16,19 +16,9 @@ public class CogSlots : MonoBehaviour, IDropHandler
     public static bool cog3InPlace = false;
     public static bool cog4InPlace = false;
     public static bool cog5InPlace = false;
-/*
-    public bool spinCog1 = false;
-    public bool spinCog2 = false;
-    public bool spinCog3 = false;
-    public bool spinCog4 = false;
-    public bool spinCog5 = false;
-*/
-   
+
     public void OnDrop(PointerEventData eventData)
     {
-
-        Debug.Log("OnDrop");
-
          if (cog1)
          {
             if (eventData.pointerDrag != null)
