@@ -156,8 +156,10 @@ public class Switch : MonoBehaviour
 
     void Update()
     {
-
-       
+        if(switchIsOn1 && switchIsOn2 && switchIsOn3 && switchIsOn4 && switchIsOn5 && switchIsOn6)
+        {
+            Debug.Log("Congrats u win!");
+        }
     }
 }
 
