@@ -14,7 +14,7 @@ public class SmogScript : MonoBehaviour
         totalTime += Time.deltaTime;
         if (totalTime > 1)
         {
-            player.currentHealth -= 5;
+            player.currentHealth -= 2;
             healthBar.SetHealh(player.currentHealth);
             totalTime = 0;
             Debug.Log(player.currentHealth);

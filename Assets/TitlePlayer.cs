@@ -3,28 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionEvent : MonoBehaviour
+public class TitlePlayer : MonoBehaviour
 {
-    public GameObject displayText;
+    public GameObject title;
     private bool _playerInArea;
-    public GameObject action;
+
     void Start()
     {
         _playerInArea = false;
-        displayText.SetActive(false);
+        title.SetActive(false);
     }
-    void Update()
-    {
-        if (_playerInArea && Input.GetKeyDown(KeyCode.F))
-        {
-            action.SetActive(true);
-        }    
-    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            displayText.SetActive(true);
+            title.SetActive(true);
             _playerInArea = true;
         }
     }
@@ -33,7 +27,7 @@ public class InteractionEvent : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            displayText.SetActive(false);
+            title.SetActive(false);
             _playerInArea = false;
         }
     }
