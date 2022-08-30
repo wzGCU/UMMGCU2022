@@ -965,8 +965,8 @@ RectTransform:
   m_Father: {fileID: 161818473}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 38.72, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1679,7 +1679,15 @@ MonoBehaviour:
     name: Drill
     clip: {fileID: 8300000, guid: a93d92c24ecbb094f973051cc71475dc, type: 3}
     volume: 1
-    pitch: 0.67
+    pitch: 0.44
+    loop: 1
+    playOnAwake: 1
+  - source: {fileID: 0}
+    audioType: 1
+    name: Adjusting
+    clip: {fileID: 8300000, guid: fb3177ef59b10f943b017ee291035336, type: 3}
+    volume: 1
+    pitch: 0.55
     loop: 1
     playOnAwake: 1
   - source: {fileID: 0}
@@ -2094,7 +2102,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2558,7 +2566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1297543568
 Transform:
   m_ObjectHideFlags: 0
@@ -2692,7 +2700,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3713,8 +3721,8 @@ RectTransform:
   m_Father: {fileID: 89993804}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 38.72, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
