@@ -9,6 +9,8 @@ public class GearCounter : MonoBehaviour
     public int gearCount = 0;
     public int requiredGearCount = 10;
     public bool gearsWelded;
+    public Player player;
+    public GameObject playerCamera;
     public GameObject weldingGameElements;
 
 
@@ -16,6 +18,7 @@ public class GearCounter : MonoBehaviour
     {
         gearsWelded = false;
         gearText = GetComponent<TMP_Text>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
 
@@ -26,6 +29,7 @@ public class GearCounter : MonoBehaviour
         if (gearCount == requiredGearCount && !gearsWelded)
         {
             weldingGameElements.SetActive(true);
+            playerCamera.SetActive(false);
         }
     }
 }

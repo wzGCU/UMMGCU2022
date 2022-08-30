@@ -13,7 +13,7 @@ public class Weld_Broken : MonoBehaviour
             //getting the raycast
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 newpos = new Vector3();
-            if (Physics.Raycast(ray, out RaycastHit raycastHit, 100000f))
+            if (Physics.Raycast(ray, out RaycastHit raycastHit))
             {
 
                 newpos = new Vector3(raycastHit.point.x, raycastHit.point.y, transform.position.z);

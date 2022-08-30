@@ -730,6 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7aac7c45c95ae458990d9f087f09e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameElements: {fileID: 0}
   switchOff1: {fileID: 1816818622}
   switchOn1: {fileID: 991133352}
   switchOff2: {fileID: 1288591677}
@@ -742,13 +743,12 @@ MonoBehaviour:
   switchOn5: {fileID: 239270614}
   switchOff6: {fileID: 1750308368}
   switchOn6: {fileID: 949163108}
-  audioManager: {fileID: 1901547112}
-  switchIsOn1: 1
-  switchIsOn2: 1
-  switchIsOn3: 1
-  switchIsOn4: 1
-  switchIsOn5: 1
-  switchIsOn6: 1
+  switchIsOn1: 0
+  switchIsOn2: 0
+  switchIsOn3: 0
+  switchIsOn4: 0
+  switchIsOn5: 0
+  switchIsOn6: 0
 --- !u!4 &339058744
 Transform:
   m_ObjectHideFlags: 0

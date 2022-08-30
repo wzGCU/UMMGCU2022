@@ -19,8 +19,6 @@ public class Switch : MonoBehaviour
     public GameObject switchOff6;
     public GameObject switchOn6;
 
-    public AudioManager audioManager;
-
     public bool switchIsOn1;
     public bool switchIsOn2;
     public bool switchIsOn3;
@@ -28,10 +26,8 @@ public class Switch : MonoBehaviour
     public bool switchIsOn5;
     public bool switchIsOn6;
 
-    void Start()
+    void Awake()
     {
-        gameElements.SetActive(true);
-
         switchOff1.SetActive(false);
         switchOn1.SetActive(true);
 
@@ -58,15 +54,19 @@ public class Switch : MonoBehaviour
         switchIsOn6 = true;
     }
 
+    void Start()
+    {
+        gameElements.SetActive(true);
+    }
+
     public void Switch1Clicked()
     {
-        audioManager.Play("LightSwitch" + Random.Range(1, 3));
-
         if (switchIsOn1)
         {
             switchOn1.SetActive(false);
             switchOff1.SetActive(true);
             switchIsOn1 = false;
+            FindObjectOfType<AudioManager>().Play("LightSwitch2");
         }
 
         else if (!switchIsOn1)
@@ -74,18 +74,18 @@ public class Switch : MonoBehaviour
             switchOn1.SetActive(true);
             switchOff1.SetActive(false);
             switchIsOn1 = true;
+            FindObjectOfType<AudioManager>().Play("LightSwitch1");
         }
     }
 
     public void Switch2Clicked()
     {
-        audioManager.Play("LightSwitch" + Random.Range(1, 3));
-
         if (switchIsOn2)
         {
             switchOn2.SetActive(false);
             switchOff2.SetActive(true);
             switchIsOn2 = false;
+            FindObjectOfType<AudioManager>().Play("LightSwitch2");
         }
 
         else if (!switchIsOn2)
@@ -93,18 +93,18 @@ public class Switch : MonoBehaviour
             switchOn2.SetActive(true);
             switchOff2.SetActive(false);
             switchIsOn2 = true;
+            FindObjectOfType<AudioManager>().Play("LightSwitch1");
         }
     }
 
     public void Switch3Clicked()
     {
-        audioManager.Play("LightSwitch" + Random.Range(1, 3));
-
         if (switchIsOn3)
         {
             switchOn3.SetActive(false);
             switchOff3.SetActive(true);
             switchIsOn3 = false;
+            FindObjectOfType<AudioManager>().Play("LightSwitch2");
         }
 
         else if (!switchIsOn3)
@@ -112,18 +112,18 @@ public class Switch : MonoBehaviour
             switchOn3.SetActive(true);
             switchOff3.SetActive(false);
             switchIsOn3 = true;
+            FindObjectOfType<AudioManager>().Play("LightSwitch1");
         }
     }
 
     public void Switch4Clicked()
     {
-        audioManager.Play("LightSwitch" + Random.Range(1, 3));
-
         if (switchIsOn4)
         {
             switchOn4.SetActive(false);
             switchOff4.SetActive(true);
             switchIsOn4 = false;
+            FindObjectOfType<AudioManager>().Play("LightSwitch2");
         }
 
         else if (!switchIsOn4)
@@ -131,18 +131,18 @@ public class Switch : MonoBehaviour
             switchOn4.SetActive(true);
             switchOff4.SetActive(false);
             switchIsOn4 = true;
+            FindObjectOfType<AudioManager>().Play("LightSwitch1");
         }
     }
 
     public void Switch5Clicked()
     {
-        audioManager.Play("LightSwitch" + Random.Range(1, 3));
-
         if (switchIsOn5)
         {
             switchOn5.SetActive(false);
             switchOff5.SetActive(true);
             switchIsOn5 = false;
+            FindObjectOfType<AudioManager>().Play("LightSwitch2");
         }
 
         else if (!switchIsOn5)
@@ -150,18 +150,18 @@ public class Switch : MonoBehaviour
             switchOn5.SetActive(true);
             switchOff5.SetActive(false);
             switchIsOn5 = true;
+            FindObjectOfType<AudioManager>().Play("LightSwitch1");
         }
     }
 
     public void Switch6Clicked()
     {
-        audioManager.Play("LightSwitch" + Random.Range(1, 3));
-
         if (switchIsOn6 == true)
         {
             switchOn6.SetActive(false);
             switchOff6.SetActive(true);
             switchIsOn6 = false;
+            FindObjectOfType<AudioManager>().Play("LightSwitch2");
         }
 
         else if (!switchIsOn6)
@@ -169,6 +169,7 @@ public class Switch : MonoBehaviour
             switchOn6.SetActive(true);
             switchOff6.SetActive(false);
             switchIsOn6 = true;
+            FindObjectOfType<AudioManager>().Play("LightSwitch1");
         }
     }
 
