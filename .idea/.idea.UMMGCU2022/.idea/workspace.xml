@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e0e7c4a6-fe8c-480d-9421-221c98975293" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UMMGCU2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UMMGCU2022/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/3D/Individual pieces/World/Example.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/3D/Individual pieces/World/Example.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/3D/Individual pieces/World/World.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/3D/Individual pieces/World/World.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Character.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Character.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapPrototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapPrototype.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScreen.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +91,7 @@
       <workItem from="1661701548347" duration="3554000" />
       <workItem from="1661745747069" duration="932000" />
       <workItem from="1661746870728" duration="7178000" />
+      <workItem from="1661840858540" duration="1674000" />
     </task>
     <servers />
   </component>
