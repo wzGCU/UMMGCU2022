@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
-// sets up the sound structure that's accessed in the inspector
+// sets up the structure for each sound that's accessed in the inspector
 
 [System.Serializable]
 
