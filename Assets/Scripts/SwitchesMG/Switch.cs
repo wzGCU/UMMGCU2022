@@ -161,5 +161,6 @@ public class Switch : MonoBehaviour
             Debug.Log("Congrats u win!");
         }
     }
+    
 }
 
