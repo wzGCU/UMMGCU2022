@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ValveMinigame : MonoBehaviour
 {
+    public GameObject gameElements;
+
     string possibleColours = "rbgy";        //Red, blue, green, yellow
     string round1Sequence;
     string round2Sequence;
@@ -22,6 +24,8 @@ public class ValveMinigame : MonoBehaviour
 
     void Start()
     {
+        gameElements.SetActive(true);
+
         //Generate sequences
         round1Sequence = possibleColours[Random.Range(0, 4)].ToString() + possibleColours[Random.Range(0, 4)].ToString() + possibleColours[Random.Range(0, 4)].ToString();      //Generate 3 random colours from the list
         round2Sequence = round1Sequence + possibleColours[Random.Range(0, 4)].ToString();   //The previous 3 colours, plus one more random one
@@ -196,7 +200,9 @@ public class ValveMinigame : MonoBehaviour
                 audioManager.Play("RightSequence");
                 playerInput = "";
                 print("You win!");
-                GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 5;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 6;
+                gameElements.SetActive(false);
+                Destroy(this.gameObject);
             }
             else
             {

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
+    public GameObject gameElements;
+
     public GameObject switchOff1;
     public GameObject switchOn1;
     public GameObject switchOff2;
@@ -28,6 +30,8 @@ public class Switch : MonoBehaviour
 
     void Start()
     {
+        gameElements.SetActive(true);
+
         switchOff1.SetActive(false);
         switchOn1.SetActive(true);
 
@@ -174,8 +178,8 @@ public class Switch : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 3;
             Debug.Log("Congrats u win!");
+            gameElements.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
-    
 }
-

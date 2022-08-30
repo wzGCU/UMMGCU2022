@@ -8,6 +8,7 @@ public class WeldTorch : MonoBehaviour
     public GameObject win;
     private int puzzleCount = 0;
     public Sprite sprite, highlightSprite;
+    public GearCounter gearCounter;
 
     static public WeldTorch Instance;
     private void Awake()
@@ -25,6 +26,8 @@ public class WeldTorch : MonoBehaviour
         {
             Debug.Log("finished minigame 1");
             Instantiate(win, transform.parent.transform.position, transform.parent.transform.rotation, transform.parent.transform.parent);
+            gearCounter.gearsWelded = true;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 8;
             Destroy(transform.parent.gameObject);
         }
         else

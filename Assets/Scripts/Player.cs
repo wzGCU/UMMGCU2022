@@ -23,13 +23,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        // if (Input.GetKeyDown(KeyCode.Space))
-        // {
-        //     currentHealth -= 10;
-        //     healthBar.SetHealth(currentHealth);
-        //     Debug.Log("HP : "+currentHealth);
-        // }
-
         switch (questStep)
         {
             case 1:
@@ -41,23 +34,35 @@ public class Player : MonoBehaviour
                 break;
 
             case 3:
-                questLog.text = "Connect the pipes in the Geothermal Station.";
+                questLog.text = "Return to Camp and rest.";
                 break;
 
             case 4:
-                questLog.text = "Open the valves in the Geothermal Station.";
+                questLog.text = "Connect the pipes in the Geothermal Station.";
                 break;
 
             case 5:
-                questLog.text = "Repair the gearbox in the Wind Turbine.";
+                questLog.text = "Open the valves in the Geothermal Station.";
                 break;
 
             case 6:
-                questLog.text = "Rotate the Wind Turbine.";
+                questLog.text = "Return to Camp and rest.";
                 break;
 
             case 7:
-                questLog.text = "Continue saving the Planet!";
+                questLog.text = "Find gears to repair the Wind Turbine gearbox.";
+                break;
+
+            case 8:
+                questLog.text = "Repair the gearbox in the Wind Turbine.";
+                break;
+
+            case 9:
+                questLog.text = "Rotate the Wind Turbine.";
+                break;
+
+            case 10:
+                questLog.text = "Rest, then move on!";
                 break;
         }
     }

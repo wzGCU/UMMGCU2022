@@ -8,7 +8,6 @@ public class TurbineSpinMinigame : MonoBehaviour
     public Transform rotationGoal = null;   //The rotation needed to complete the minigame, set in-engine.
     public GameObject turbineObject = null;     //Wind turbine game object, set in-engine.
     private float angleDifference;      //Difference between turbineObject and rotationGoal's angle.
-    public GameObject turbineArms = null;
 
 
     void Start()
@@ -34,11 +33,8 @@ public class TurbineSpinMinigame : MonoBehaviour
         if (angleDifference < 5)
         {
             print("You win!");
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 7;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 10;
+            Destroy(this.gameObject);
         }
-
-
-        //Spin the turbine arms, speed depends on how close the turbine is to its goal
-        turbineArms.transform.Rotate(0, 0, 0.1f * (180-angleDifference));
     }
 }
