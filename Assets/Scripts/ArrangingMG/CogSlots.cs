@@ -19,13 +19,24 @@ public class CogSlots : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-         if (cog1)
+        int placementSound = Random.Range(0, 6);
+
+        if (placementSound <= 2)
+        {
+            FindObjectOfType<AudioManager>().Play("PlacingCog1");
+        }
+
+        if (placementSound >= 3)
+        {
+            FindObjectOfType<AudioManager>().Play("PlacingCog2");
+        }
+
+        if (cog1)
          {
             if (eventData.pointerDrag != null)
             {
                 eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
                 cog1InPlace = true;
-                FindObjectOfType<AudioManager>().Play("PlacingCog");
             }
          }
 
@@ -35,7 +46,6 @@ public class CogSlots : MonoBehaviour, IDropHandler
             {
                 eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
                 cog2InPlace = true;
-                FindObjectOfType<AudioManager>().Play("PlacingCog");
             }
          }
 
@@ -45,7 +55,6 @@ public class CogSlots : MonoBehaviour, IDropHandler
             {
                 eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
                 cog3InPlace = true;
-                FindObjectOfType<AudioManager>().Play("PlacingCog");
             }
          }
 
@@ -55,7 +64,6 @@ public class CogSlots : MonoBehaviour, IDropHandler
             {
                 eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
                 cog4InPlace = true;
-                FindObjectOfType<AudioManager>().Play("PlacingCog");
             }
          }
 
@@ -65,7 +73,6 @@ public class CogSlots : MonoBehaviour, IDropHandler
             {
                 eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
                 cog5InPlace = true;
-                FindObjectOfType<AudioManager>().Play("PlacingCog");
             }
          }
     }

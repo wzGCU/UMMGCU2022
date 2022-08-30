@@ -1679,13 +1679,21 @@ MonoBehaviour:
     name: Drill
     clip: {fileID: 8300000, guid: a93d92c24ecbb094f973051cc71475dc, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 0.67
     loop: 1
     playOnAwake: 1
   - source: {fileID: 0}
     audioType: 0
-    name: PlacingCog
+    name: PlacingCog1
     clip: {fileID: 8300000, guid: 951ebfc5d43420642af0adf6673f397b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - source: {fileID: 0}
+    audioType: 0
+    name: PlacingCog2
+    clip: {fileID: 8300000, guid: 8b98530da562a6844a42bbc215aeeb5a, type: 3}
     volume: 1
     pitch: 1
     loop: 0
