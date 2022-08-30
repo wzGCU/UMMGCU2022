@@ -6,16 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="e0e7c4a6-fe8c-480d-9421-221c98975293" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UMMGCU2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UMMGCU2022/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/MenuAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/MenuAnimation.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapPrototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapPrototype.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SwitchesMG.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SwitchesMG.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ValveMG.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ValveMG.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwitchesMG/Switch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SwitchesMG/Switch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ValveMinigame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ValveMinigame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WiresTask/Scripts/MinigameWireController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WiresTask/Scripts/MinigameWireController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpecialInteractionEvent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,7 +89,7 @@
       <workItem from="1661745747069" duration="932000" />
       <workItem from="1661746870728" duration="7178000" />
       <workItem from="1661840858540" duration="1674000" />
-      <workItem from="1661844865800" duration="627000" />
+      <workItem from="1661844865800" duration="3180000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,9 @@ public class MinigameWireController : MonoBehaviour
     public int puzzleTotalCount;
     //public GameObject win;
     private int puzzleCount = 0;
-
+    public GameObject wiresGame;
+    public GameObject playerCamera;
+    
     static public MinigameWireController Instance;
     private void Awake()
     {
@@ -19,6 +21,8 @@ public class MinigameWireController : MonoBehaviour
         puzzleCount++;
         if(puzzleCount == puzzleTotalCount)
         {
+            wiresGame.SetActive(false);
+            playerCamera.SetActive(true);
             Debug.Log("finished minigame");
             //win.SetActive(true);
         }
