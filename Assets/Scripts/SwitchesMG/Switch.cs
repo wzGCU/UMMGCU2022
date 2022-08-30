@@ -17,6 +17,8 @@ public class Switch : MonoBehaviour
     public GameObject switchOff6;
     public GameObject switchOn6;
 
+    public AudioManager audioManager;
+
     public bool switchIsOn1;
     public bool switchIsOn2;
     public bool switchIsOn3;
@@ -54,6 +56,8 @@ public class Switch : MonoBehaviour
 
     public void Switch1Clicked()
     {
+        audioManager.Play("LightSwitch" + Random.Range(1, 3));
+
         if (switchIsOn1)
         {
             switchOn1.SetActive(false);
@@ -71,6 +75,8 @@ public class Switch : MonoBehaviour
 
     public void Switch2Clicked()
     {
+        audioManager.Play("LightSwitch" + Random.Range(1, 3));
+
         if (switchIsOn2)
         {
             switchOn2.SetActive(false);
@@ -88,6 +94,8 @@ public class Switch : MonoBehaviour
 
     public void Switch3Clicked()
     {
+        audioManager.Play("LightSwitch" + Random.Range(1, 3));
+
         if (switchIsOn3)
         {
             switchOn3.SetActive(false);
@@ -105,6 +113,8 @@ public class Switch : MonoBehaviour
 
     public void Switch4Clicked()
     {
+        audioManager.Play("LightSwitch" + Random.Range(1, 3));
+
         if (switchIsOn4)
         {
             switchOn4.SetActive(false);
@@ -122,6 +132,8 @@ public class Switch : MonoBehaviour
 
     public void Switch5Clicked()
     {
+        audioManager.Play("LightSwitch" + Random.Range(1, 3));
+
         if (switchIsOn5)
         {
             switchOn5.SetActive(false);
@@ -139,6 +151,8 @@ public class Switch : MonoBehaviour
 
     public void Switch6Clicked()
     {
+        audioManager.Play("LightSwitch" + Random.Range(1, 3));
+
         if (switchIsOn6 == true)
         {
             switchOn6.SetActive(false);

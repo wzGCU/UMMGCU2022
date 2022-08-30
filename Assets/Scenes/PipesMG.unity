@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &78608986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &156989693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,6 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &183083847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &305894599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,6 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &472609319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,6 +916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &474309895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,6 +1134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &490760725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,6 +1282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &514584478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,6 +1430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &549488463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1663,6 +1672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &737237475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1911,6 +1921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &759732041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,6 +2069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &791724731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2282,6 +2294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &980804993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2429,6 +2442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1012765623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2576,6 +2590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1024906057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2723,6 +2738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1109046429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2931,6 +2947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1174400253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3078,6 +3095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1226687359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3301,6 +3319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1333565715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3676,6 +3695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1534140080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3823,6 +3843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1549173047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3917,6 +3938,76 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1624778333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624778336}
+  - component: {fileID: 1624778335}
+  - component: {fileID: 1624778334}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1624778334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624778333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe70191f3b053a4ab2572bdddb69ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSliderText: {fileID: 0}
+  SFXSliderText: {fileID: 0}
+--- !u!114 &1624778335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624778333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ed533c2fa703a418c1ad71269abfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicMixerGroup: {fileID: -6828694874473967024, guid: b622321ec7e6de1499fe16c65518ba37, type: 2}
+  soundEffectsMixerGroup: {fileID: -5149200119227578237, guid: b622321ec7e6de1499fe16c65518ba37, type: 2}
+  sounds:
+  - source: {fileID: 0}
+    audioType: 0
+    name: PipeTurn
+    clip: {fileID: 8300000, guid: e1bb5630c372f1c469e40ce169d58649, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+--- !u!4 &1624778336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624778333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1076.283, y: 555.4998, z: 85.33424}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1837510001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3970,6 +4061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1837510004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4117,6 +4209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1881646467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4264,6 +4357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1921953106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4490,6 +4584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileState: 0
+  audioManager: {fileID: 1624778335}
 --- !u!114 &1977492336
 MonoBehaviour:
   m_ObjectHideFlags: 0

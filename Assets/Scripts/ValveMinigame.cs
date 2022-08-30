@@ -17,6 +17,8 @@ public class ValveMinigame : MonoBehaviour
     public GameObject greenLight;
     public GameObject yellowLight;
 
+    public AudioManager audioManager;
+
 
     void Start()
     {
@@ -89,6 +91,7 @@ public class ValveMinigame : MonoBehaviour
             return;     //Don't continue with the rest of the function if the screen is still flashing
         }
 
+        audioManager.Play("ValveTurn");
         playerInput += "r";
         CheckPlayerInput();
     }
@@ -101,6 +104,7 @@ public class ValveMinigame : MonoBehaviour
             return;     //Don't continue with the rest of the function if the screen is still flashing
         }
 
+        audioManager.Play("ValveTurn");
         playerInput += "g";
         CheckPlayerInput();
     }
@@ -113,6 +117,7 @@ public class ValveMinigame : MonoBehaviour
             return;     //Don't continue with the rest of the function if the screen is still flashing
         }
 
+        audioManager.Play("ValveTurn");
         playerInput += "b";
         CheckPlayerInput();
     }
@@ -125,6 +130,7 @@ public class ValveMinigame : MonoBehaviour
             return;     //Don't continue with the rest of the function if the screen is still flashing
         }
 
+        audioManager.Play("ValveTurn");
         playerInput += "y";
         CheckPlayerInput();
     }
@@ -136,13 +142,14 @@ public class ValveMinigame : MonoBehaviour
         {
             if (playerInput == round1Sequence)
             {
+                audioManager.Play("RightSequence");
                 currentRoundCounter++;
                 playerInput = "";
                 StartCoroutine("FlashLights", round2Sequence);
             }
             else
             {
-                //Play sound indicating they were wrong?
+                audioManager.Play("WrongSequence");
                 playerInput = "";
                 currentRoundCounter = 1;
                 StartCoroutine("FlashLights", round1Sequence);
@@ -152,13 +159,14 @@ public class ValveMinigame : MonoBehaviour
         {
             if (playerInput == round2Sequence)
             {
+                audioManager.Play("RightSequence");
                 currentRoundCounter++;
                 playerInput = "";
                 StartCoroutine("FlashLights", round3Sequence);
             }
             else
             {
-                //Play sound indicating they were wrong?
+                audioManager.Play("WrongSequence");
                 playerInput = "";
                 currentRoundCounter = 1;
                 StartCoroutine("FlashLights", round1Sequence);
@@ -168,13 +176,14 @@ public class ValveMinigame : MonoBehaviour
         {
             if (playerInput == round3Sequence)
             {
+                audioManager.Play("RightSequence");
                 currentRoundCounter++;
                 playerInput = "";
                 StartCoroutine("FlashLights", round4Sequence);
             }
             else
             {
-                //Play sound indicating they were wrong?
+                audioManager.Play("WrongSequence");
                 playerInput = "";
                 currentRoundCounter = 1;
                 StartCoroutine("FlashLights", round1Sequence);
@@ -184,12 +193,13 @@ public class ValveMinigame : MonoBehaviour
         {
             if (playerInput == round4Sequence)
             {
+                audioManager.Play("RightSequence");
                 playerInput = "";
                 print("You win!");
             }
             else
             {
-                //Play sound indicating they were wrong?
+                audioManager.Play("WrongSequence");
                 playerInput = "";
                 currentRoundCounter = 1;
                 StartCoroutine("FlashLights", round1Sequence);

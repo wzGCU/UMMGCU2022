@@ -742,6 +742,7 @@ MonoBehaviour:
   switchOn5: {fileID: 239270614}
   switchOff6: {fileID: 1750308368}
   switchOn6: {fileID: 949163108}
+  audioManager: {fileID: 1901547112}
   switchIsOn1: 1
   switchIsOn2: 1
   switchIsOn3: 1
@@ -2243,6 +2244,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1901547110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1901547113}
+  - component: {fileID: 1901547112}
+  - component: {fileID: 1901547111}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1901547111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901547110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe70191f3b053a4ab2572bdddb69ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSliderText: {fileID: 0}
+  SFXSliderText: {fileID: 0}
+--- !u!114 &1901547112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901547110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ed533c2fa703a418c1ad71269abfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicMixerGroup: {fileID: -6828694874473967024, guid: b622321ec7e6de1499fe16c65518ba37, type: 2}
+  soundEffectsMixerGroup: {fileID: -5149200119227578237, guid: b622321ec7e6de1499fe16c65518ba37, type: 2}
+  sounds:
+  - source: {fileID: 0}
+    audioType: 0
+    name: LightSwitch1
+    clip: {fileID: 8300000, guid: 9d93836178ef0214e96d487edb67c768, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - source: {fileID: 0}
+    audioType: 0
+    name: LightSwitch2
+    clip: {fileID: 8300000, guid: 843cc90fc82367c43842cc3ddaedfaf3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+--- !u!4 &1901547113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901547110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1076.283, y: 555.4998, z: 85.33424}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1903769379
 GameObject:
