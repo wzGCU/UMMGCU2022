@@ -24,6 +24,7 @@ public class MinigameWireController : MonoBehaviour
             wiresGame.SetActive(false);
             playerCamera.SetActive(true);
             Debug.Log("finished minigame");
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 2;
             //win.SetActive(true);
         }
     }

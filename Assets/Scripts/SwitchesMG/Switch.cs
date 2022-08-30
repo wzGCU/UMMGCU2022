@@ -172,6 +172,7 @@ public class Switch : MonoBehaviour
     {
         if(switchIsOn1 && switchIsOn2 && switchIsOn3 && switchIsOn4 && switchIsOn5 && switchIsOn6)
         {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 3;
             Debug.Log("Congrats u win!");
         }
     }

@@ -196,6 +196,7 @@ public class ValveMinigame : MonoBehaviour
                 audioManager.Play("RightSequence");
                 playerInput = "";
                 print("You win!");
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 5;
             }
             else
             {
