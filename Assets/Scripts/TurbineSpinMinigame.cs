@@ -34,6 +34,7 @@ public class TurbineSpinMinigame : MonoBehaviour
         if (angleDifference < 5)
         {
             print("You win!");
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 7;
         }
 
 

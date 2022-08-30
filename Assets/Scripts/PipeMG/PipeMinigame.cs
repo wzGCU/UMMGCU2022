@@ -47,6 +47,7 @@ public class PipeMinigame : MonoBehaviour
             (pipeTileGrid[9].tileState == 1 || pipeTileGrid[9].tileState == 3) && 
             gameCompleted == false)
         {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 4;
             print("You did it!");
             gameCompleted = true;
             //END GAME (Win)

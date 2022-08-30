@@ -38,6 +38,7 @@ public class CogsManager : MonoBehaviour
         {
             playerCog5.transform.Rotate(0, 0, -1);
             cogCompletion = true;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 6;
         }
     }
 }

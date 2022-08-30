@@ -3,6 +3,7 @@ using UnityEngine;
 public class PipeTile : MonoBehaviour
 {
     public int tileState;   //Between 0 and 3, the rotation of the tile (rotation is 90 x tileState, if it goes > 3 it resets to 0).
+    public AudioManager audioManager;
 
 
     void Start()
@@ -19,6 +20,7 @@ public class PipeTile : MonoBehaviour
         {
             tileState = 0;
         }
+        audioManager.Play("PipeTurn");
         this.gameObject.GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, tileState * 90);        //Rotate pipe to match new tileState.
     }
 }
