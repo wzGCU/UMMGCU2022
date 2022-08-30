@@ -175,7 +175,7 @@ MonoBehaviour:
     name: ValveTurn
     clip: {fileID: 8300000, guid: 1ccb6454a4929eb4c9b4d133b6470a6c, type: 3}
     volume: 1
-    pitch: 0
+    pitch: 1
     loop: 0
     playOnAwake: 0
   - source: {fileID: 0}
@@ -183,7 +183,7 @@ MonoBehaviour:
     name: WrongSequence
     clip: {fileID: 8300000, guid: 2c92c9c67fa086248a6d7816a722385a, type: 3}
     volume: 1
-    pitch: 0
+    pitch: 1
     loop: 0
     playOnAwake: 0
   - source: {fileID: 0}
@@ -191,7 +191,7 @@ MonoBehaviour:
     name: RightSequence
     clip: {fileID: 8300000, guid: 7c72124ed0296fa4a860bc2d93e9e164, type: 3}
     volume: 1
-    pitch: 0
+    pitch: 1
     loop: 0
     playOnAwake: 0
 --- !u!4 &217380333
