@@ -9,6 +9,8 @@ using System;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager instance;
+
     [SerializeField]
     private AudioMixerGroup musicMixerGroup;
 
@@ -16,10 +18,11 @@ public class AudioManager : MonoBehaviour
     private AudioMixerGroup soundEffectsMixerGroup;
 
     public Sound[] sounds;
-    public static AudioManager instance;
 
     void Awake()
     {
+        instance = this;
+
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -44,7 +47,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // searches through the array looking for a match to play
+    // searches through the array looking for a match, if a match is found then is played
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -61,7 +64,8 @@ public class AudioManager : MonoBehaviour
         s.source.Stop();
     }
 
-    public void UpdateMixerVolume() // using log10 because we're working with decibels
+    // using log10 because we're working with decibels
+    public void UpdateMixerVolume()
     {
         musicMixerGroup.audioMixer.SetFloat("MusicVolume", Mathf.Log10(AudioOptionsManager.musicVolume) * 20);
         soundEffectsMixerGroup.audioMixer.SetFloat("SFXVolume", Mathf.Log10(AudioOptionsManager.soundEffectsVolume) * 20);
