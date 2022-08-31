@@ -4,5 +4,47 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: a29b33493c515c84099f21228bf88a16
+  - enabled: 0
+    path: Assets/Scenes/ArrangingMG.unity
+    guid: f4b44dafaa062194582aa31aaf18d83b
+  - enabled: 1
+    path: Assets/Scenes/CreditsScreen.unity
+    guid: 3719a42fd4b562f4c9a040813d1952cc
+  - enabled: 0
+    path: Assets/Scenes/Level0.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/Map_WiktorEdit.unity
+    guid: fe474b8594f76bd469a938706e688b98
+  - enabled: 1
+    path: Assets/Scenes/MapPrototype.unity
+    guid: 1ffb7fa62e3234f4594790b9938ae15c
+  - enabled: 1
+    path: Assets/Scenes/OptionsScreen.unity
+    guid: 13dada992e55c8245960280e98e9fc89
+  - enabled: 0
+    path: Assets/Scenes/WiresTask.unity
+    guid: 0e2cd43416f89404aa9bb9e7f7c5d3aa
+  - enabled: 0
+    path: Assets/Scenes/TurbineSpinMG.unity
+    guid: a45d3fa1cc3eb2e4b9e002c28ed1e65e
+  - enabled: 0
+    path: Assets/Scenes/ValveMG.unity
+    guid: 67826a8a346c96c4381a4a47a7f3f559
+  - enabled: 0
+    path: Assets/Scenes/SwitchesMG.unity
+    guid: ab4a1a54c6bdd09499b27bc58b92f915
+  - enabled: 0
+    path: Assets/Scenes/WeldingMG.unity
+    guid: 63261c5b4b126454eb68fcc8ee4089ae
+  - enabled: 0
+    path: Assets/Scenes/WeldingDrawingMG.unity
+    guid: 9c9a91c66399edf4282b14611cf514b8
+  - enabled: 0
+    path: Assets/Scenes/PipesMG.unity
+    guid: f1fc892d9cf562c41b5bcb9f4c17af72
   m_configObjects: {}

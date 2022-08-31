@@ -207,6 +207,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &973954393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 973954396}
+  - component: {fileID: 973954395}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &973954395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973954393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ed533c2fa703a418c1ad71269abfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicMixerGroup: {fileID: -6828694874473967024, guid: b622321ec7e6de1499fe16c65518ba37, type: 2}
+  soundEffectsMixerGroup: {fileID: -5149200119227578237, guid: b622321ec7e6de1499fe16c65518ba37, type: 2}
+  sounds:
+  - source: {fileID: 0}
+    audioType: 0
+    name: Zap1
+    clip: {fileID: 8300000, guid: c997cb0caecb86e40800184e2cc989cd, type: 3}
+    volume: 0.812
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - source: {fileID: 0}
+    audioType: 0
+    name: Zap2
+    clip: {fileID: 8300000, guid: d305b6f83029eb6428f3d3aa42054a3b, type: 3}
+    volume: 0.839
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+  - source: {fileID: 0}
+    audioType: 1
+    name: Background1
+    clip: {fileID: 8300000, guid: 08e54a7642236414c8fa5de1f08b901d, type: 3}
+    volume: 0.157
+    pitch: 1
+    loop: 1
+    playOnAwake: 1
+  - source: {fileID: 0}
+    audioType: 1
+    name: Background2
+    clip: {fileID: 8300000, guid: a46513650a8a9e747acd85cb97957925, type: 3}
+    volume: 0.247
+    pitch: 1
+    loop: 1
+    playOnAwake: 1
+--- !u!4 &973954396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973954393}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1076.283, y: 555.4998, z: 85.33424}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869074526
 GameObject:
   m_ObjectHideFlags: 0

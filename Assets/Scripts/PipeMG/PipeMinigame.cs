@@ -2,30 +2,31 @@ using UnityEngine;
 
 public class PipeMinigame : MonoBehaviour
 {
+    public GameObject gameElements;
+    public Player player;
     [SerializeField] private PipeTile[] pipeTileGrid = new PipeTile[25];      //Array of Pipe Tiles containing 25 entries (for a 5x5 grid)
     int timeLimitMax = 120;      //Time (in seconds) that the player has to complete the puzzle.
     float timerCountdown;
-    bool gameCompleted;
 
 
     private void Start()
     {
+        gameElements.SetActive(true);
         timerCountdown = timeLimitMax;
-        gameCompleted = false;
     }
 
 
     void Update()
     {
         //Game timer
-        if (timerCountdown > 0 && gameCompleted == false)
+        if (timerCountdown > 0)
         {
             timerCountdown -= Time.deltaTime;
         }
         else if (timerCountdown <= 0)
         {
             print("You were too slow!");
-            //END GAME (Fail)
+            gameElements.SetActive(false);
         }
 
         //Win condition
@@ -44,12 +45,12 @@ public class PipeMinigame : MonoBehaviour
             pipeTileGrid[2].tileState == 3 &&
             pipeTileGrid[7].tileState == 1 &&
             (pipeTileGrid[8].tileState == 1 || pipeTileGrid[8].tileState == 3) &&
-            (pipeTileGrid[9].tileState == 1 || pipeTileGrid[9].tileState == 3) && 
-            gameCompleted == false)
+            (pipeTileGrid[9].tileState == 1 || pipeTileGrid[9].tileState == 3))
         {
+            player.questStep = 5;
             print("You did it!");
-            gameCompleted = true;
-            //END GAME (Win)
+            gameElements.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }
