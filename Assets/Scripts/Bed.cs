@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bed : MonoBehaviour
 {
     public GameObject displayText;
     private bool _playerInArea;
     public Player player;
+    public GameObject SleepFadeScreen;
 
     void Start()
     {
@@ -24,14 +26,16 @@ public class Bed : MonoBehaviour
             {
                 case 3:
                     player.questStep = 4;
+                    StartCoroutine("Sleep");
                     break;
 
                 case 6:
-                    player.questStep = 6;
+                    player.questStep = 7;
+                    StartCoroutine("Sleep");
                     break;
 
-                case 9:
-                    //END GAME
+                case 10:
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("CreditsScreen");
                     break;
             }
         }
@@ -55,5 +59,12 @@ public class Bed : MonoBehaviour
                 displayText.SetActive(false);
                 _playerInArea = false;
             }
+    }
+
+    IEnumerator Sleep()
+    {
+        SleepFadeScreen.SetActive(true);
+        yield return new WaitForSeconds(1);
+        SleepFadeScreen.SetActive(false);
     }
 }

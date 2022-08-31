@@ -12,6 +12,9 @@ public class DrawingScript : MonoBehaviour
    
     private bool isLineStarted;
 
+    public GearCounter gearCounter;
+    public GameObject playerCamera;
+
     private int points;
    /* private Vector3 point1 = new Vector3(-0.2f, 1.3f, -9f);
     private Vector3 point2 = new Vector3(-0.2f, 1.2f, -9f);
@@ -32,6 +35,7 @@ public class DrawingScript : MonoBehaviour
         //resetting the linerenderer
         isLineStarted = false;
         LineRenderer.positionCount = 0;
+        gearCounter = FindObjectOfType<GearCounter>();
 
       
     }
@@ -77,6 +81,11 @@ public class DrawingScript : MonoBehaviour
             if (LineRenderer.positionCount >= 120)
             {
                 Debug.Log("TaskFinished");
+                gearCounter.gearsWelded = true;
+                gearCounter.playerCamera.SetActive(true);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 8;
+                transform.parent.gameObject.SetActive(false);
+
             }
             isLineStarted = false;
         }
