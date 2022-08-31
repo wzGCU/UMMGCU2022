@@ -14,7 +14,7 @@ public class ImmortalScript : MonoBehaviour
     {
         _playerInArea = false;
         displayText.SetActive(false);
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        //layer = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
 

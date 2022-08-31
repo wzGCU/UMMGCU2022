@@ -18,6 +18,7 @@ public class ValveMinigame : MonoBehaviour
     public GameObject blueLight;
     public GameObject greenLight;
     public GameObject yellowLight;
+    public Player player;
 
     public AudioManager audioManager;
 
@@ -200,7 +201,7 @@ public class ValveMinigame : MonoBehaviour
                 audioManager.Play("RightSequence");
                 playerInput = "";
                 print("You win!");
-                GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 6;
+                player.questStep = 6;
                 gameElements.SetActive(false);
                 Destroy(this.gameObject);
             }

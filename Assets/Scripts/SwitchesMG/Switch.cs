@@ -20,6 +20,7 @@ public class Switch : MonoBehaviour
     public GameObject switchOn5;
     public GameObject switchOff6;
     public GameObject switchOn6;
+    public Player player;
 
     public bool switchIsOn1;
     public bool switchIsOn2;
@@ -179,7 +180,7 @@ public class Switch : MonoBehaviour
     {
         if(switchIsOn1 && switchIsOn2 && switchIsOn3 && switchIsOn4 && switchIsOn5 && switchIsOn6)
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 3;
+            player.questStep = 3;
             Debug.Log("Congrats u win!");
             gameElements.SetActive(false);
             Destroy(this.gameObject);

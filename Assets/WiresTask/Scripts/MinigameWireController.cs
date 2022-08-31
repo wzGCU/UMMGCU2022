@@ -9,13 +9,16 @@ public class MinigameWireController : MonoBehaviour
     //public GameObject win;
     private int puzzleCount = 0;
     public GameObject wiresGame;
+    public GameObject wiresText;
     public GameObject playerCamera;
+    public Player player;
     public AudioManager mine;
     
     static public MinigameWireController Instance;
     private void Awake()
     {
         Instance = this;
+        wiresText.SetActive(false);
     }
     public void PuzzleAddPoint()
     {
@@ -37,7 +40,7 @@ public class MinigameWireController : MonoBehaviour
             wiresGame.SetActive(false);
             playerCamera.SetActive(true);
             Debug.Log("finished minigame");
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 2;
+            player.questStep = 2;
             //win.SetActive(true);
         }
     }

@@ -15,7 +15,7 @@ public class InteractionEvent : MonoBehaviour
     {
         _playerInArea = false;
         displayText.SetActive(false);
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+      //  player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
 

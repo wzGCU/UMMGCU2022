@@ -3,6 +3,7 @@ using UnityEngine;
 public class PipeMinigame : MonoBehaviour
 {
     public GameObject gameElements;
+    public Player player;
     [SerializeField] private PipeTile[] pipeTileGrid = new PipeTile[25];      //Array of Pipe Tiles containing 25 entries (for a 5x5 grid)
     int timeLimitMax = 120;      //Time (in seconds) that the player has to complete the puzzle.
     float timerCountdown;
@@ -46,7 +47,7 @@ public class PipeMinigame : MonoBehaviour
             (pipeTileGrid[8].tileState == 1 || pipeTileGrid[8].tileState == 3) &&
             (pipeTileGrid[9].tileState == 1 || pipeTileGrid[9].tileState == 3))
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().questStep = 5;
+            player.questStep = 5;
             print("You did it!");
             gameElements.SetActive(false);
             Destroy(this.gameObject);

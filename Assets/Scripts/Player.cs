@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
     public TextMeshProUGUI questLog;
     public int questStep;
+    public bool isTurbining;
+    public GameObject gameOver;
 
 
     void Start()
@@ -65,5 +68,16 @@ public class Player : MonoBehaviour
                 questLog.text = "Rest, then move on!";
                 break;
         }
+        if (currentHealth <= 0)
+        {
+            StartCoroutine("GameOver");
+        }
+    }
+
+    IEnumerator GameOver()
+    {
+        gameOver.SetActive(true);
+        yield return new WaitForSeconds(3);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("StartScreen");
     }
 }

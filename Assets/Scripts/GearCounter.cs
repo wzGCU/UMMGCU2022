@@ -18,7 +18,7 @@ public class GearCounter : MonoBehaviour
     {
         gearsWelded = false;
         gearText = GetComponent<TMP_Text>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+       // player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
 
