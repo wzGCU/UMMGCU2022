@@ -22,7 +22,7 @@ public class SpecialInteractionEvent : MonoBehaviour
 
     void Update()
     {
-        if (_playerInArea && Input.GetKeyDown(KeyCode.F) && player.questStep >= requiredGoalStep)
+        if (_playerInArea && Input.GetKeyDown(KeyCode.F) && player.questStep == requiredGoalStep)
         {
             action.SetActive(true);
             playerCamera.SetActive(false);
@@ -32,7 +32,7 @@ public class SpecialInteractionEvent : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (player.questStep >= requiredGoalStep)
+        if (player.questStep == requiredGoalStep)
         {
             if (other.gameObject.tag == "Player")
             {

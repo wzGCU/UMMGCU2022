@@ -26,11 +26,11 @@ public class Player : MonoBehaviour
         switch (questStep)
         {
             case 1:
-                questLog.text = "Repair the wires on the Solar Panels.";
+                questLog.text = "Repair the wires on the Solar Panels outside.";
                 break;
 
             case 2:
-                questLog.text = "Activate the Solar Panels.";
+                questLog.text = "Activate the Solar Panels inside the base.";
                 break;
 
             case 3:

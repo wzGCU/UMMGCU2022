@@ -10,6 +10,7 @@ public class MinigameWireController : MonoBehaviour
     private int puzzleCount = 0;
     public GameObject wiresGame;
     public GameObject playerCamera;
+    public AudioManager mine;
     
     static public MinigameWireController Instance;
     private void Awake()
@@ -22,12 +23,12 @@ public class MinigameWireController : MonoBehaviour
 
         if (wiresSound <= 3)
         {
-            FindObjectOfType<AudioManager>().Play("Zap1");
+            mine.Play("Zap1");
         }
 
         if (wiresSound >= 4)
         {
-            FindObjectOfType<AudioManager>().Play("Zap2");
+            mine.Play("Zap2");
         }
 
         puzzleCount++;

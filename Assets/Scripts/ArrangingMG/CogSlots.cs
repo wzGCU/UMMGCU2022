@@ -11,6 +11,8 @@ public class CogSlots : MonoBehaviour, IDropHandler
     public bool cog4 = false;
     public bool cog5 = false;
 
+    public AudioManager arrangeAudio;
+
     public static bool cog1InPlace = false;
     public static bool cog2InPlace = false;
     public static bool cog3InPlace = false;
@@ -23,12 +25,12 @@ public class CogSlots : MonoBehaviour, IDropHandler
 
         if (placementSound <= 2)
         {
-            FindObjectOfType<AudioManager>().Play("PlacingCog1");
+            arrangeAudio.Play("PlacingCog1");
         }
 
         if (placementSound >= 3)
         {
-            FindObjectOfType<AudioManager>().Play("PlacingCog2");
+            arrangeAudio.Play("PlacingCog2");
         }
 
         if (cog1)
