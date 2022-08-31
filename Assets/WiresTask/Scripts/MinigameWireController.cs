@@ -18,6 +18,18 @@ public class MinigameWireController : MonoBehaviour
     }
     public void PuzzleAddPoint()
     {
+        int wiresSound = Random.Range(1, 6);
+
+        if (wiresSound <= 3)
+        {
+            FindObjectOfType<AudioManager>().Play("Zap1");
+        }
+
+        if (wiresSound >= 4)
+        {
+            FindObjectOfType<AudioManager>().Play("Zap2");
+        }
+
         puzzleCount++;
         if(puzzleCount == puzzleTotalCount)
         {
